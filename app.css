@@ -5,6 +5,14 @@ html {
 }
 
 /* Nav styles  */
+img#nav_logo {
+
+display: block;
+width: 15%;
+float: left;
+}
+
+
 .main_nav
 {
 	/*height: 100%;*/
