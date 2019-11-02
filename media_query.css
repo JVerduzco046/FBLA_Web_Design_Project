@@ -1,19 +1,29 @@
+/* Small devices (portrait phones, 320px and up)*/
+@media (min-width: 320px) {
+
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
  
 }
  
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (portrait tablets, 768px and up) */
 @media (min-width: 768px) {  
  
 }
+
+/* Medium devices (landscape tablets, 1024px and up) */
+@media (min-width: 1024px) {  
  
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+}
+
+/* Large devices (laptops, 1336px and up) */
+@media (min-width: 1336px) { 
  
 }
  
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+/* Extra large devices (large desktops, 1680px and up) */
+@media (min-width: 1680px) {  
     
 }
