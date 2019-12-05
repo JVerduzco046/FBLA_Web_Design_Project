@@ -5,7 +5,23 @@ html {
 	z-index: 0;
 	background-repeat: no-repeat;
 }
-
+/* main background Images Styles */
+.home
+{
+	width: 100%;
+	height: 100vh;
+}
+.home_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
 /* Nav styles  */
 
 img#nav_logo {
