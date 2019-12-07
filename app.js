@@ -8,3 +8,5 @@ const expand = () => {
 };
 
 searchBtn.addEventListener("click", expand);
+
+// scroll things

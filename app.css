@@ -5,7 +5,6 @@ html {
 	z-index: 0;
 	background-repeat: no-repeat;
 }
-
 /* main background Images Styles */
 .home {
 	width: 100%;
@@ -26,7 +25,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* header */
 /* Nav styles  */
 
 img#nav_logo {
@@ -84,7 +83,8 @@ nav.navbar {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #130a3599;
+	background-color: rgb(19, 10, 53);
+	opacity: .5;
 	padding: 0px;
 }
 
@@ -112,7 +112,8 @@ a.navbar-brand img#nav_logo {
 	font-size: 20px;
 	color: white;
 	padding: 0px;
-	line-height: 20px
+	line-height: 20px;
+	opacity: 1;
 }
 
 /* Slogan Styles */
