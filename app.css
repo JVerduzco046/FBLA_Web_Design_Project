@@ -461,11 +461,15 @@ a.sm-link:hover {
 	-ms-transform: translate(-100%, -50%);
 	transform: translate(-100%, -50%);
   }
-
-/*  */
   
   /* footer styles */
   footer {
-	background-color: #020c35;
+	background-color: #1e1741;
 	color: #fff;
+  }
+
+  .footerTitle{
+	  font-size: 24px;
+	  font-weight: 300;
+	  color: white;
   }
