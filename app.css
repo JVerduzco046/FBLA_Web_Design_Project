@@ -462,3 +462,8 @@ a.sm-link:hover {
 	transform: translate(-100%, -50%);
   }
   
+  /* footer styles */
+  footer {
+	background-color: #020c35;
+	color: #fff;
+  }
