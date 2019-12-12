@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Offers</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="app.css" />
-	
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Offers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="app.css" /> -->
+		<link rel="stylesheet" href="offers.css">
+
 </head>
 
 <body>
@@ -66,100 +68,109 @@
 			</ul>
 		</nav>
 	</header>
-<!-- 
-	<section id="section1">
-		<form id="regForm" name="regForm" method="post"></form>
-		action="mas_reg2.html"
-		<h1>MAS22 Registration Form</h1>
+	<div class="home">
+            <div class="home_background"></div>
+            <div class="slogan_content">
+                <div class="slogan_content_inner" id="slogan_content_inner">
+                    <div class="slogan_text_large">ZEPHYR</div>
+                    <div class="slogan_text_small">OFFERS</div>
+                </div>
+            </div>
+	</div>
+	<!--  -->
+	<section id="section1"> 
+		<form id="regForm" name="regForm" method="post"></form> <!--action="mas_reg2.html"-->
+			  <h1>MAS22 Registration Form</h1>
 
-		<fieldset id="contactInfo">
-			<label for="fnBox">First Name*</label>
-			<input name="firstName" id="fnBox" type="text" required />
 
-			<label for="lnBox">Last Name*</label>
-			<input name="lastName" id="lnBox" type="text" required />
+			  <fieldset id="contactInfo">
+					<label for="fnBox">First Name*</label>
+					<input name="firstName" id="fnBox" type="text" required />
 
-			<label for="mailBox">E-mail*</label>
-			<input name="email" id="mailBox" type="email" required />
+					<label for="lnBox">Last Name*</label>
+					<input name="lastName" id="lnBox" type="text" required />
 
-			<label for="phoneBox">Phone Number*</label>
-			<input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required placeholder="(nnn) nnn-nnnn" />
+					<label for="groupBox">Company or University</label>
+					<input name="group" id="groupBox" type="text" />
 
-			<label for="groupBox">Rewards Number</label>
-			<input name="group" id="groupBox" type="text" />
-		</fieldset> 
-	-->
+					<label for="mailBox">E-mail*</label>
+					<input name="email" id="mailBox" type="email" required />
 
-<!-- 
-		<fieldset id="confChoices">
-			<label for="sessionBox">Session Packs</label>
-			<select id="sessionBox" name="sessionOption" size="5" required>
-				<option value="95">Exhibits Only ($95)</option>
-				<option value="215">3 Session Pack ($215)</option>
-				<option value="420">6 Session Pack ($420)</option>
-				<option value="595">Session Pass ($595)</option>
-				<option value="845">VIP Pass ($845)</option>
-			</select>
-			<label for="banquet">MAS22 Banquet ($55 ea.)</label>
-			<input type="number" min="0" max="10" id="banquetBox" name="banquetGuests" /><span>
-				Passengers</span>
+					<label for="phoneBox">Phone Number*</label>
+					<input name="phoneNumber" id="phoneBox" type="tel"
+						  pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required
+						  placeholder="(nnn) nnn-nnnn" />
+			  </fieldset>
 
-			<label for="mediaPack">MAS22 Media Pack ($115)</label>
-			<input type="checkbox" name="mediaPack" id="mediaCB" value="115" />
+			  <fieldset id="confChoices">
+					<label for="sessionBox">Session Packs</label>
+					<select id="sessionBox" name="sessionOption" size="5" required>
+						  <option value="95">Exhibits Only ($95)</option>
+						  <option value="215">3 Session Pack ($215)</option>
+						  <option value="420">6 Session Pack ($420)</option>
+						  <option value="595">Session Pass ($595)</option>
+						  <option value="845">VIP Pass ($845)</option>
+					</select>
+					<label for="banquet">MAS22 Banquet ($55 ea.)</label>
+					<input type="number" min="0" max="10" id="banquetBox" name="banquetGuests" /><span>
+						  attendees</span>
 
-		</fieldset>
-		<input id="regSubmit" type="submit" value="continue" />
+					<label for="mediaPack">MAS22 Media Pack ($115)</label>
+					<input type="checkbox" name="mediaPack" id="mediaCB" value="115" />
+
+			  </fieldset>
+			  <input id="regSubmit" type="submit" value="continue" />
 		</form>
-	</section>
+  </section>
 
-	<aside id="reg1Aside">
+  <aside id="reg1Aside">
 		<table>
-			<caption>Shopping Cart</caption>
-			<tr>
-				<th>Name</th>
-				<td><span id="regName"></span></td>
-			</tr>
-			<tr>
-				<th>Company</th>
-				<td><span id="regGroup"></span></td>
-			</tr>
-			<tr>
-				<th>E-mail</th>
-				<td><span id="regEmail"></span></td>
-			</tr>
-			<tr>
-				<th>Phone</th>
-				<td><span id="regPhone"></span></td>
-			</tr>
-			<tr>
-				<th>Session</th>
-				<td><span id="regSession"></span></td>
-			</tr>
-			<tr>
-				<th>Banquet Guests ($55 ea.)</th>
-				<td><span id="regBanquet"></span></td>
-			</tr>
-			<tr>
-				<th>Media Pack ($115)</th>
-				<td><span id="regPack"></span></td>
-			</tr>
-			<tr>
-				<th>TOTAL</th>
-				<td><span id="regTotal"></span></td>
-			</tr>
+			  <caption>Shopping Cart</caption>
+			  <tr>
+					<th>Name</th>
+					<td><span id="regName"></span></td>
+			  </tr>
+			  <tr>
+					<th>Company</th>
+					<td><span id="regGroup"></span></td>
+			  </tr>
+			  <tr>
+					<th>E-mail</th>
+					<td><span id="regEmail"></span></td>
+			  </tr>
+			  <tr>
+					<th>Phone</th>
+					<td><span id="regPhone"></span></td>
+			  </tr>
+			  <tr>
+					<th>Session</th>
+					<td><span id="regSession"></span></td>
+			  </tr>
+			  <tr>
+					<th>Banquet Guests ($55 ea.)</th>
+					<td><span id="regBanquet"></span></td>
+			  </tr>
+			  <tr>
+					<th>Media Pack ($115)</th>
+					<td><span id="regPack"></span></td>
+			  </tr>
+			  <tr>
+					<th>TOTAL</th>
+					<td><span id="regTotal"></span></td>
+			  </tr>
 		</table>
-	</aside> -->
+  </aside>
 
-	<script src="app.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
