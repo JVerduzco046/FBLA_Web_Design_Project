@@ -80,7 +80,7 @@
 	<!--  -->
 	<section id="section1"> 
 		<form id="regForm" name="regForm" method="post"></form> <!--action="mas_reg2.html"-->
-			  <h1>Book Your Flight!</h1>
+			  <h1>Check Availability!</h1>
 
 			  <fieldset id="contactInfo">
 					<label for="fnBox">First Name*</label>
@@ -89,37 +89,25 @@
 					<label for="lnBox">Last Name*</label>
 					<input name="lastName" id="lnBox" type="text" required />
 
-					<label for="mailBox">E-mail*</label>
-					<input name="email" id="mailBox" type="email" required />
+					<label for="fromBox">From*</label>
+					<input name="from" id="fromBox" type="text" required placeholder="Type where you come from"/>
 
-					<label for="phoneBox">Phone Number*</label>
-					<input name="phoneNumber" id="phoneBox" type="tel"
-						  pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required
-						  placeholder="(nnn) nnn-nnnn" />
+					<label for="destBox">Destination*</label>
+					<input name="dest" id="destBox" type="text" required placeholder="Type in your destination" />
+
+					<label for="firstDateBox">Departure Date</label>
+					<input type="date" name="firstDate" id="firstDateBox">
+					
+					<label for="lastDateBox">Arrival Date</label>
+					<input type="date" name="lastDate" id="lastDateBox">
 			  </fieldset>
 
-			  <fieldset id="confChoices">
-					<label for="sessionBox">Flights</label>
-					<select id="sessionBox" name="sessionOption" size="5" required>
-						  <option value="45">Southwest Flights ($45)</option>
-						  <option value="65">Northwest Flights ($65)</option>
-						  <option value="90">Midwest Flights ($90)</option>
-						  <option value="120">Southeast Flights ($120)</option>
-						  <option value="145">Northeast Flights ($145)</option>
-					</select>
-					<label for="banquet">Luggage Cost ($25 ea.)</label>
-					<input type="number" min="0" max="10" id="banquetBox" name="banquetGuests" /><span>
-						  attendees</span>
 
-					<label for="mediaPack">First Class ($15)</label>
-					<input type="checkbox" name="mediaPack" id="mediaCB" value="15" />
-
-			  </fieldset>
 			  <input id="regSubmit" type="submit" value="continue" />
 		</form>
   </section>
 
-  <aside id="reg1Aside">
+  <!-- <aside id="reg1Aside">
 		<table>
 			  <caption>Shopping Cart</caption>
 			  <tr>
@@ -127,23 +115,27 @@
 					<td><span id="regName"></span></td>
 			  </tr>
 			  <tr>
-					<th>E-mail</th>
-					<td><span id="regEmail"></span></td>
+					<th>From</th>
+					<td><span id="regFrom"></span></td>
 			  </tr>
 			  <tr>
-					<th>Phone</th>
-					<td><span id="regPhone"></span></td>
+					<th>Destination</th>
+					<td><span id="regDest"></span></td>
 			  </tr>
 			  <tr>
-					<th>Session</th>
-					<td><span id="regSession"></span></td>
+					<th>Departure</th>
+					<td><span id="regDept"></span></td>
 			  </tr>
 			  <tr>
-					<th>Banquet Guests ($55 ea.)</th>
+					<th>Arrival</th>
+					<td><span id="regArrival"></span></td>
+			  </tr>
+			  <tr>
+					<th>Luggage Cost ($25 ea.)</th>
 					<td><span id="regBanquet"></span></td>
 			  </tr>
 			  <tr>
-					<th>Media Pack ($115)</th>
+					<th>First Class ($30)</th>
 					<td><span id="regPack"></span></td>
 			  </tr>
 			  <tr>
@@ -151,7 +143,7 @@
 					<td><span id="regTotal"></span></td>
 			  </tr>
 		</table>
-  </aside>
+  </aside> -->
 
   <footer>
 	<div class="container">
@@ -197,7 +189,7 @@
 	</div>
 </footer>
 
-	<script src="app.js"></script>
+	<!-- <script src="app.js"></script> -->
 	<script src="form.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
