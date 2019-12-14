@@ -477,3 +477,11 @@ a.sm-link:hover {
 	  font-weight: 300;
 	  color: #ffffff;
   }
+  input.newsFooter {
+	border: 4px solid #fdaa27;
+    background: none;
+    font-family: 'Arvo', serif;
+	transform: none;
+	width: 100%;
+	border-radius: 0%;
+  }

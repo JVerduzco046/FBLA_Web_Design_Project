@@ -319,3 +319,7 @@ a.sm-link:hover {
 	margin: auto;
 }
 /* section styles  */
+section{
+	width: 75%;
+	margin: auto;
+}
