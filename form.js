@@ -67,7 +67,7 @@ function calcCart() {
       // this looks to see if the checkbox is active; if it is, it will say it is active and give the value to be added to the total cost. otherwise, it will say it is not active and give 0 as a value to be set for the total cost.
       if (document.getElementById("mediaCB").onclick) {
             sessionStorage.confPack = "yes";
-            sessionStorage.confPackCost = 115;
+            sessionStorage.confPackCost = 30;
       } else {
             sessionStorage.confPack = "no";
             sessionStorage.confPackCost = 0;
