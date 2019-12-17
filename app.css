@@ -498,4 +498,11 @@ a.sm-link:hover {
 	  width: 20%;
 	  float: right;
   }
-  
+  p#newsLetterText{
+	  clear: both;
+  }
+  div.socials{
+	  clear: both;
+	  align-content: center;
+	  width: 100%;
+  }
