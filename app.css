@@ -329,7 +329,7 @@ a.sm-link:hover {
 	width: 300px;
 	margin-left: 170px;
 	top: 90%;
-	left: 90%;
+	left: 95%;
 	transform: translate(-50%, -50%);
   }
   
@@ -478,10 +478,19 @@ a.sm-link:hover {
 	  color: #ffffff;
   }
   input.newsFooter {
-	border: 4px solid #fdaa27;
+	border: 1px solid white;
     background: none;
     font-family: 'Arvo', serif;
 	transform: none;
 	width: 100%;
 	border-radius: 0%;
   }
+  input.newsFooter#newsLetterFooter{
+	  width: 70%;
+	  float: left;
+  }
+  input.newsFooter#newsFooterButton{
+	  width: 20%;
+	  float: right;
+  }
+  
