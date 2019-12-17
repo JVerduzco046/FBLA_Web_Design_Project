@@ -53,7 +53,7 @@ function calcCart() {
 
       sessionStorage.confPhone = document.forms.regForm.elements.phoneBox.value;
 
-      sessionStorage.confBanquetCost = sessionStorage.confBanquet * 25;
+      // sessionStorage.confBanquetCost = sessionStorage.confBanquet * 25;
 
       var selectedIndex = document.getElementById("sessionBox").selectedIndex;
       // if the selected index does not equal 1, then this means that
