@@ -323,9 +323,9 @@ section#section1{
 width: 100%;
 }
 fieldset#offersForm{
-	width: 70%;
+	width: 61%;
 	float: right;
-
+	background-image: url(offersFormImage.jpg);
 }
 
 input.offersFormInput {
@@ -341,9 +341,10 @@ div.formhalf {
 	float: right;
 }
 div.formHalf div{
-	width: 40%;
+	width: 45%;
 	float:left;
 	margin-right: 10px;
+	margin-top:3em ;
 }
 div.formHalf div label{
 width: 100%;
