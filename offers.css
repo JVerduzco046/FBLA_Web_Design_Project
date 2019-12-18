@@ -341,8 +341,9 @@ div.formhalf {
 	float: right;
 }
 div.formHalf div{
-	width: 50%;
+	width: 40%;
 	float:left;
+	margin-right: 10px;
 }
 div.formHalf div label{
 width: 100%;
@@ -365,12 +366,12 @@ div.formThird div p{
 div.formThird div select{
 	width: 100%;
 }
-
-input.offersFormInput#regSubmi {
-	align-content: center;
-}
 div.offersFormButton {
 	width: 100%;
     align-items: center;
-    padding-top: 10px;
+	padding-top: 10px;
+	clear: both;
+}
+div.offersFormButton input#regSubmit{
+width: 20%;
 }
