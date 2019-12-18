@@ -319,47 +319,58 @@ a.sm-link:hover {
 	margin: auto;
 }
 /* section styles  */
-section{
-	width: 75%;
-	margin: auto;
+section#section1{
+width: 100%;
+}
+fieldset#offersForm{
+	width: 70%;
+	float: right;
+
 }
 
-  /* footer styles */
-  footer {
-	background-color: #1e1741;
-	color: #7d8293;
-  }
-
-  footer div.col-lg-4{
-	  font-size: 12px;
-  }
-
-  .footerTitle{
-	  font-size: 24px;
-	  font-weight: 300;
-	  color: #ffffff;
-  }
-  input.newsFooter {
-	border: 1px solid white;
+input.offersFormInput {
+	border: 1px solid black;
     background: none;
     font-family: 'Arvo', serif;
 	transform: none;
-	width: 100%;
 	border-radius: 0%;
-  }
-  input.newsFooter#newsLetterFooter{
-	  width: 70%;
-	  float: left;
-  }
-  input.newsFooter#newsFooterButton{
-	  width: 20%;
-	  float: right;
-  }
-  p#newsLetterText{
-	  clear: both;
-  }
-  div.socials{
-	  clear: both;
-	  align-content: center;
-	  width: 100%;
-  }
+	color: black;
+}
+div.formhalf {
+	width: 60%;
+	float: right;
+}
+div.formHalf div{
+	width: 50%;
+	float:left;
+}
+div.formHalf div label{
+width: 100%;
+align-content: center;
+}
+div.formHalf div input{
+	width:100%;
+	float: left;
+}
+div.formThird{
+	width: 100%;
+}
+div.formThird div{
+	width: 30%;
+	float: left;
+}
+div.formThird div p{
+	width: 100%;
+}
+div.formThird div select{
+	width: 100%;
+}
+
+input.offersFormInput#regSubmi {
+	align-content: center;
+}
+div.offersFormButton {
+	width: 100%;
+    align-items: center;
+    padding-top: 10px;
+}

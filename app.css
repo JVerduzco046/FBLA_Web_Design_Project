@@ -471,6 +471,7 @@ a.sm-link:hover {
   footer {
 	background-color: #1e1741;
 	color: #7d8293;
+	clear: both;
   }
 
   footer div.col-lg-4{
