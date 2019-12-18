@@ -323,3 +323,43 @@ section{
 	width: 75%;
 	margin: auto;
 }
+
+  /* footer styles */
+  footer {
+	background-color: #1e1741;
+	color: #7d8293;
+  }
+
+  footer div.col-lg-4{
+	  font-size: 12px;
+  }
+
+  .footerTitle{
+	  font-size: 24px;
+	  font-weight: 300;
+	  color: #ffffff;
+  }
+  input.newsFooter {
+	border: 1px solid white;
+    background: none;
+    font-family: 'Arvo', serif;
+	transform: none;
+	width: 100%;
+	border-radius: 0%;
+  }
+  input.newsFooter#newsLetterFooter{
+	  width: 70%;
+	  float: left;
+  }
+  input.newsFooter#newsFooterButton{
+	  width: 20%;
+	  float: right;
+  }
+  p#newsLetterText{
+	  clear: both;
+  }
+  div.socials{
+	  clear: both;
+	  align-content: center;
+	  width: 100%;
+  }
