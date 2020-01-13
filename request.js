@@ -1,79 +1,70 @@
-// var data = null;
+// imports all of the necessary packages
+var express = require("express");
+const path = require("path");
+const axios = require("axios");
 
-// var xhr = new XMLHttpRequest();
-// xhr.withCredentials = true;
+// defines express as app; much shorter than writing express() for every line of code
+var app = express();
 
-// xhr.addEventListener("readystatechange", function () {
-// 	if (this.readyState === this.DONE) {
-// 		console.log(this.responseText);
-// 	}
-// });
+// // uses axios to fetch some data from an api.
+// axios({
+//   method: "GET",
+//   url:
+//     "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsedates/v1.0/US/USD/en-US/SFO-sky/LAX-sky/2019-09-01",
+//   headers: {
+//     "content-type": "application/octet-stream",
+//     "x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
+//     "x-rapidapi-key": "770b384954msh2abf447cafe8eaep111516jsn225385055740"
+//   },
+//   params: {
+//     inboundpartialdate: "2019-12-01"
+//   }
+// })
+//   .then(response => {
+//     console.log(response);
+//   })
+//   .catch(error => {
+//     console.log(error);
+//   });
 
-// xhr.open("GET", "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/%7Bsessionkey%7D?pageIndex=0&pageSize=10");
-// xhr.setRequestHeader("x-rapidapi-host", "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com");
-// xhr.setRequestHeader("x-rapidapi-key", "770b384954msh2abf447cafe8eaep111516jsn225385055740");
+// defines our view engine, and where the files that have those view engines are located.
+app.set("view engine", "pug")
+app.set("views", path.join(__dirname, "views"));
 
-// xhr.send(data);
+// defines where all of our static content is located
+app.use('/public', express.static('public'));
+app.use('/img', express.static('public/img'));
+app.use('/css', express.static('public/css'));
+app.use('/js', express.static('public/js'));
+app.use('/html', express.static('public/html'));
 
+app.get("/", (request, response) => {
+  response.render('index');
+});
 
+app.get("/about", (request, response) => {
+  response.render('about');
+});
 
+app.get("/offers", (request, response) => {
+  response.render('offers');
+});
 
+app.get("/news", (request, response) => {
+  response.render('news');
+});
 
+app.get("/offers2", (request, response) => {
+  response.render('offers2',
+    {
+    // data: airline;
+    });
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // // imports the packages into the document, requiring their respective module.
-// // const express = require('express');
-// // const path = require('path'); 
-// // const fetch = require('node-fetch');
-
-// // // app runs the express module, allowing it to be used elsewhere in the document without the need to write the function more than once, defining it to a quick variable.
-// // const app = express();
-// // // this defines our port; this is where on the localhost that our content will be found.
-// // const port = 8006;
-
-// // // using this, we pass information to the pug file. because in that document we have defined the title and the message, we can use those to define those as the content which should go inside of the document. Here, we use render to have the information passed to the pug file rendered to the user as html. 
-
-// // app.get('/github', (req, res) => {  
-// // //because fetch has been defined above as node-fetch, we can just say fetch, instead of node-fetch.
-// // fetch('https://api.github.com/users/cgregorio026')
-// // .then(res => res.json())
-// // .then(
-// //   (json) => {
-// //     console.log(json)
-// //   res.render('github', { 
-// //       data: info,
-// //       github: json
-// //     })
-// //   })
-// // });
-  
-
-// // // when running nodemon, this will tell us that the info will be displayed on the port defined. to run this using nodemon, we would want to be in the projects directory, and use nodemon express.js, which will display this message, and then display the rest of our information in the pug file.
-// // const server = app.listen(port, () => {
-// //     console.log(`something is here -> ${server.address().port}`);
-// // });
+// starts the server and log the port that our server is located at
+// defines our port
+var PORT = 3000;
+// has express listen for where our server is (defined above)
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Server started on ${PORT}`);
+});

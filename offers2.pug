@@ -1,0 +1,43 @@
+html
+    head
+        link(rel="stylesheet", href="/static/style.css")
+        title My airline page!
+    body
+    header
+      nav.navbar.navbar-expand-sm.navbar-dark.fixed-top(id='')
+        a.navbar-brand(href='index.html')
+          img#nav_logo(src='img/Zephyr_Airline_Logo.png', alt='Logo')
+        ul.main_nav_list
+          li.main_nav_item
+            .section
+              .section__item
+                a.sm-link.sm-link_padding.sm-link1(href='/')
+                  span.sm-link__label Home
+          li.main_nav_item
+            .section
+              .section__item
+                a.sm-link.sm-link_padding.sm-link1(href='/offers')
+                  span.sm-link__label Offers
+          li.main_nav_item.active
+            .section
+              .section__item
+                a.sm-link.sm-link_padding.sm-link1(href='/news')
+                  span.sm-link__label News
+          li.main_nav_item
+            .section
+              .section__item
+                a.sm-link.sm-link_padding.sm-link1(href='/about')
+                  span.sm-link__label About Us
+
+    .home
+      .home_background
+      .slogan_content
+        #slogan_content_inner.slogan_content_inner
+          .slogan_text_large Easy Breezy
+          .slogan_text_small Zephyr Airlines
+
+
+        p= airline.dimensions[0].members[0].key
+        p= `Your destination is the ${airline.dimensions[0].members[0].text}.`
+        p= `There might be a ${airline.dimensions[1].members[0]}`
+        p= `The flight will depart from ${airline.dimensions[2].members[3].text}.`
