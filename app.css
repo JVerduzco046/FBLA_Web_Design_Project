@@ -103,7 +103,8 @@ a.navbar-brand img#nav_logo {
 }
 
 .main_nav_item {
-	width: 20%;
+	width: 15%;
+	float: left;
 }
 
 .main_nav_item a {
@@ -114,7 +115,9 @@ a.navbar-brand img#nav_logo {
 	line-height: 20px;
 	opacity: 1;
 }
-
+div.nav-subclass .main_nav_item{
+	float: right;
+}
 /* Slogan Styles */
 .home {
 	width: 100%;
