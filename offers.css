@@ -330,7 +330,7 @@ width: 100%;
 fieldset#offersForm{
 	width: 61%;
 	float: right;
-	background-image: url(offersFormImage.jpg);
+	/* background-image: url(offersFormImage.jpg); */
 }
 
 input.offersFormInput {
@@ -359,25 +359,22 @@ div.formHalf div input{
 	width:100%;
 	float: left;
 }
-div.formThird{
-	width: 100%;
-}
-div.formThird div{
-	width: 30%;
-	float: left;
-}
-div.formThird div p{
-	width: 100%;
-}
-div.formThird div select{
-	width: 100%;
-}
-div.offersFormButton {
-	width: 100%;
-    align-items: center;
-	padding-top: 10px;
-	clear: both;
-}
+div.formhalf:after {
+	content: "";
+	display: table; 
+	clear: both; 
+  } 
+  div.formthird:after {
+	content: "";
+	display: table;
+	clear: both; 
+  }
+
 div.offersFormButton input#regSubmit{
 width: 20%;
 }
+fieldset#offersForm:after {
+	content: "";
+	display: table; 
+	clear: both; 
+  } 
