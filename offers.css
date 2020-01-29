@@ -83,7 +83,7 @@ nav.navbar {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgba(19, 10, 53, 0.461);
+	background-color: rgba(19, 10, 53, .461);
 	padding: 0px;
 }
 
@@ -324,57 +324,23 @@ a.sm-link:hover {
 	margin: auto;
 }
 /* section styles  */
-section#section1{
+form#regForm{
+	background: url(offersFormImage.jpeg) fixed repeat;
+	background-position-y:center middle;
+	background-size: 100%;
+}
+section#section1 form#regForm {
+display: block; 
 width: 100%;
 }
-fieldset#offersForm{
-	width: 61%;
-	float: right;
-	/* background-image: url(offersFormImage.jpg); */
+
+form#regForm fieldset#offersForm{
+	display: block;
+    width: 35%;
+	margin-left: 55%;
+	margin-right: 5%;
+	background: white;
+	padding: 5%;
+    
 }
 
-input.offersFormInput {
-	border: 1px solid black;
-    background: none;
-    font-family: 'Arvo', serif;
-	transform: none;
-	border-radius: 0%;
-	color: black;
-}
-div.formhalf {
-	width: 60%;
-	float: right;
-}
-div.formHalf div{
-	width: 45%;
-	float:left;
-	margin-right: 10px;
-	margin-top:3em ;
-}
-div.formHalf div label{
-width: 100%;
-align-content: center;
-}
-div.formHalf div input{
-	width:100%;
-	float: left;
-}
-div.formhalf:after {
-	content: "";
-	display: table; 
-	clear: both; 
-  } 
-  div.formthird:after {
-	content: "";
-	display: table;
-	clear: both; 
-  }
-
-div.offersFormButton input#regSubmit{
-width: 20%;
-}
-fieldset#offersForm:after {
-	content: "";
-	display: table; 
-	clear: both; 
-  } 

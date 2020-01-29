@@ -10,7 +10,6 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="app.css" />
 	<link rel="stylesheet" href="offers.css">
-
 </head>
 
 <body>
@@ -28,41 +27,22 @@
 							</a>
 						</div>
 					</div>
-				</div>
-			</li>
-			<li class="main_nav_item active">
-				<div class="section">
-					<div class="section__item">
-						<a href="offers.html" class="sm-link sm-link_padding sm-link1">
-							<span class="sm-link__label">Offers</span>
-						</a>
 					</div>
-				</div>
-			</li>
-			<li class="main_nav_item">
-				<div class="section">
-					<div class="section__item">
-						<a href="news.html" class="sm-link sm-link_padding sm-link1">
-							<span class="sm-link__label">News</span>
-						</a>
+				</li>
+				<li class="main_nav_item active">
+					<div class="section">
+						<div class="section__item">
+							<a href="offers.html" class="sm-link sm-link_padding sm-link1">
+								<span class="sm-link__label">Offers</span>
+							</a>
+						</div>
 					</div>
-				</div>
-			</li>
-			<li class="main_nav_item">
-				<div class="section">
-					<div class="section__item">
-						<a href="about.html" class="sm-link sm-link_padding sm-link1">
-							<span class="sm-link__label">About Us</span>
-						</a>
-					</div>
-				</div>
-			</li>
-			<div class="nav-subclass">
+				</li>
 				<li class="main_nav_item">
 					<div class="section">
 						<div class="section__item">
-							<a href="about.html" class="sm-link sm-link_padding sm-link1">
-								<span class="sm-link__label">Sign Up</span>
+							<a href="news.html" class="sm-link sm-link_padding sm-link1">
+								<span class="sm-link__label">News</span>
 							</a>
 						</div>
 					</div>
@@ -71,13 +51,32 @@
 					<div class="section">
 						<div class="section__item">
 							<a href="about.html" class="sm-link sm-link_padding sm-link1">
-								<span class="sm-link__label">Sign In</span>
+								<span class="sm-link__label">About Us</span>
 							</a>
 						</div>
 					</div>
 				</li>
-			</div>
-		</ul>
+				<div class="nav-subclass">
+					<li class="main_nav_item">
+						<div class="section">
+							<div class="section__item">
+								<a href="#" class="sm-link sm-link_padding sm-link1">
+									<span class="sm-link__label">Sign Up</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="main_nav_item">
+						<div class="section">
+							<div class="section__item">
+								<a href="#" class="sm-link sm-link_padding sm-link1">
+									<span class="sm-link__label">Sign In</span>
+								</a>
+							</div>
+						</div>
+					</li>
+				</div>
+			</ul>
 		</nav>
 	</header>
 	<div class="home">
@@ -89,62 +88,45 @@
 			</div>
 		</div>
 	</div>
-	<!--  -->
 	<section id="section1">
-		<form id="regForm" name="regForm" method="post"></form>
-		<!--action="mas_reg2.html"-->
-		<h1>Check Availability!</h1>
+		<div class="form_container">
+			<form id="regForm" name="regForm" method="post" back>
+				<fieldset id="offersForm">
+					<h1>Check Availability!</h1>
+					<div class="form_group">
+						<label for="One Way">
+							<input type="" id="oneWay"   name="flight-type">
+							<span>One Way</span>
+						</label>
 
-		<fieldset id="offersForm">
-			<div class="formHalf">
-					<div class="">
-							<label for="destBox">From</label>
-							<input name="dest" id="destBox" type="text" required placeholder="Type in your destination"
-								class="offersFormInput" />
+						<label for="Round Trip">
+							<input type="" id="roundTrip"   name="flight-type">
+							<span>Round Trip</span>
+
+							<label for="Multi City">
+								<input type="" id="multiCity"  name="flight-type">
+								<span>Multi City</span>
+							</label>
 					</div>
-				<div class="">
-						<label for="destBox">Destination*</label>
-						<input name="dest" id="destBox" type="text" required placeholder="Type in your destination"
-							class="offersFormInput" />
-				</div>
+					<div class="firstHalf">
+						<p>mangos</p>
+					</div>
+					<div class="secondHalf">
+						<p>mangos</p>
+					</div>
 
-				<div class="">
-						<label for="firstDateBox">Departure Date</label>
-						<input type="date" name="firstDate" id="firstDateBox" class="offersFormInput">
-		
-				</div>
-				<div class="">
-						<label for="lastDateBox">Arrival Date</label>
-						<input type="date" name="lastDate" id="lastDateBox" class="offersFormInput">
-				</div>
-			</div>
-			<div class="formThird">
-				<div>
-					<p>Children(0-17)</p>	
-					<select name="childrenAmount" id="">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-					</select>
-				</div>
-				<div>
-					<p>Adults(18+)</p>	
-					<select name="adultAmount" id="">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-					</select>
-				</div>
-			</div>
+					<div class="offersFormButton">
+						<input id="regSubmit" type="submit" value="Show Flights" class="offersFormInput">
+					</div>
+
+				</fieldset>
+			</form>
+
 		</div>
-		
-		<div class="offersFormButton">
-					<input id="regSubmit" type="submit" value="Show Flights" class="offersFormInput" >
-			</div>
-		</fieldset>
-		</form>
 	</section>
-	
+	<!--action="mas_reg2.html"-->
+
+
 	<!-- <aside id="reg1Aside">
 		<table>
 			  <caption>Shopping Cart</caption>
@@ -183,7 +165,7 @@
 		</table>
   </aside> -->
 
-  	<!-- Search Bar  -->
+	<!-- Search Bar  -->
 
 	<form id="content">
 		<input type="text" name="input" class="input" id="search-input">
