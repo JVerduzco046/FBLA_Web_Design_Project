@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/JVerduzco046/FBLA_Web_Design_Project#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^2.0.1"
   }
 }
